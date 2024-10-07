@@ -1,45 +1,72 @@
-<style>
-    .testimonial-section {
-  display: flex;
-  justify-content: center;
-  padding: 40px;
-  background: #f9f9f9;
-}
-.testimonial-container {
-  max-width: 800px;
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 20px;
-}
-.testimonial-item {
-  background: #ffffff;
-  border-radius: 8px;
-  padding: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-.testimonial-text {
-  font-size: 1.1em;
-  color: #333;
-}
-.testimonial-author {
-  margin-top: 10px;
-  font-weight: bold;
-  color: #555;
-}
-.testimonial-role {
-  color: #999;
-}
-
-</style>
-
-<div class="testimonial-section">
-    <div class="testimonial-container">
-      <div class="testimonial-item">
-        <p class="testimonial-text">"This product changed my life! Highly recommended."</p>
-        <h3 class="testimonial-author">John Doe</h3>
-        <span class="testimonial-role">Software Engineer</span>
-      </div>
-      <!-- Add more testimonial-item divs as needed -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimonials</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.css">
+    <link rel="stylesheet" href="/styles/testimonials.css">
+</head>
+<body>
+    <div class="testimonials-container">
+        <h2 class="testimonials-title">Testimonials</h2>
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="testimonial-quote">&ldquo;</div>
+                    <img src="../image/pro-mai.png" alt="Jane Doe" class="testimonial-image">
+                    <p class="testimonial-text">OnePutt offers a range of weight oprions and customizable training distances to suit individual needs and goals.</p>
+                    <div class="testimonial-rating">★★★★★</div>
+                    <h3 class="testimonial-name">Pro Mai Wattana</h3>
+                    <!-- <p class="testimonial-position">CEO</p> -->
+                </div>
+                <div class="swiper-slide">
+                    <div class="testimonial-quote">&ldquo;</div>
+                    <img src="../image/pro-pure.png" alt="John Smith" class="testimonial-image">
+                    <p class="testimonial-text">It makes the golf practice enjoyable and fun. So i can practice for a munch longer time. It also have clear puttin measurements which help improve efficiency</p>
+                    <div class="testimonial-rating">★★★★★</div>
+                    <h3 class="testimonial-name">Pro Pure Navee</h3>
+                    <!-- p class="testimonial-position">CTO</p> -->
+                </div>
+              <!--   <div class="swiper-slide">
+                    <div class="testimonial-quote">&ldquo;</div>
+                    <img src="/api/placeholder/80/80" alt="Emma Wilson" class="testimonial-image">
+                    <p class="testimonial-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus elementum magna ut duis pulvinar tincidunt vivamus adipiscing quam. Eget dui quis etiam sed eget sed est.</p>
+                    <div class="testimonial-rating">★★★★☆</div>
+                    <h3 class="testimonial-name">Emma Wilson</h3>
+                    <p class="testimonial-position">Marketing Director</p>
+                </div> -->
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
     </div>
-  </div>
-  
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.js"></script>
+    <script>
+        new Swiper('.swiper', {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            loop: true,
+            centeredSlides: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            breakpoints: {
+                320: {
+                    slidesPerView: 1,
+                },
+                768: {
+                    slidesPerView: 3,
+                }
+            }
+        });
+    </script>
+</body>
+</html>
