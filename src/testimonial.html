@@ -3,62 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Testimonials</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.css">
-    <link rel="stylesheet" href="/styles/testimonials.css">
+    <title>Testimonials Section</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+        .testimonials-container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        h1 {
+            color: #FFA500;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        .subtitle {
+            text-align: center;
+            margin-bottom: 50px;
+            color: #666;
+        }
+        .testimonials {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+        }
+        .testimonial {
+            flex: 1;
+            background-color: #fff;
+            padding: 40px 20px 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            text-align: center;
+            position: relative;
+            margin-top: 40px;
+        }
+        .testimonial img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            position: absolute;
+            top: -40px;
+            left: 50%;
+            transform: translateX(-50%);
+            border: 5px solid #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .testimonial p {
+            font-size: 14px;
+            color: #333;
+            margin-bottom: 15px;
+        }
+        .testimonial .name {
+            font-weight: bold;
+            color: #FFA500;
+            margin-bottom: 5px;
+        }
+        .testimonial .position {
+            font-size: 12px;
+            color: #666;
+        }
+        .quote {
+            font-size: 24px;
+            color: #FFA500;
+        }
+    </style>
 </head>
 <body>
     <div class="testimonials-container">
-        <h2 class="testimonials-title">Testimonials</h2>
-        <div class="swiper">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <div class="testimonial-quote">&ldquo;</div>
-                    <img src="../image/pro-mai.png" alt="Jane Doe" class="testimonial-image">
-                    <p class="testimonial-text">OnePutt offers a range of weight oprions and customizable training distances to suit individual needs and goals.</p>
-                    <div class="testimonial-rating">★★★★★</div>
-                    <h3 class="testimonial-name">Pro Mai Wattana</h3>
-                    <!-- <p class="testimonial-position">CEO</p> -->
-                </div>
-                <div class="swiper-slide">
-                    <div class="testimonial-quote">&ldquo;</div>
-                    <img src="../image/pro-pure.png" alt="John Smith" class="testimonial-image">
-                    <p class="testimonial-text">It makes the golf practice enjoyable and fun. So i can practice for a munch longer time. It also have clear puttin measurements which help improve efficiency</p>
-                    <div class="testimonial-rating">★★★★★</div>
-                    <h3 class="testimonial-name">Pro Pure Navee</h3>
-                    <!-- p class="testimonial-position">CTO</p> -->
-                </div>
+        <h1>TESTIMONIALS</h1>
+        <p class="subtitle">Subscribe Easy Tutorials YouTube channel to watch more videos.</p>
+        <div class="testimonials">
+            <div class="testimonial">
+                <img src="https://via.placeholder.com/80" alt="Avinash Kr">
+                <p><span class="quote">"</span> Like this vide and ask your questions in comment section, don't forget to Subscribe Easy Tutorials YouTube channel to watch more videos of website designing, digital marketing and photoshop. <span class="quote">"</span></p>
+                <p class="name">Avinash Kr</p>
+                <p class="position">Co-Founder at xyz</p>
             </div>
-            <div class="swiper-pagination"></div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
+            <div class="testimonial">
+                <img src="https://via.placeholder.com/80" alt="Bharat Kunal">
+                <p><span class="quote">"</span> Like this vide and ask your questions in comment section, don't forget to Subscribe Easy Tutorials YouTube channel to watch more videos of website designing, digital marketing and photoshop. <span class="quote">"</span></p>
+                <p class="name">Bharat Kunal</p>
+                <p class="position">Manager at xyz</p>
+            </div>
+            <div class="testimonial">
+                <img src="https://via.placeholder.com/80" alt="Prabhakar D">
+                <p><span class="quote">"</span> Like this vide and ask your questions in comment section, don't forget to Subscribe Easy Tutorials YouTube channel to watch more videos of website designing, digital marketing and photoshop. <span class="quote">"</span></p>
+                <p class="name">Prabhakar D</p>
+                <p class="position">Founder / CEO at xyz</p>
+            </div>
         </div>
     </div>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.js"></script>
-    <script>
-        new Swiper('.swiper', {
-            slidesPerView: 3,
-            spaceBetween: 30,
-            loop: true,
-            centeredSlides: true,
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-            },
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-            breakpoints: {
-                320: {
-                    slidesPerView: 1,
-                },
-                768: {
-                    slidesPerView: 3,
-                }
-            }
-        });
-    </script>
 </body>
 </html>
