@@ -6,9 +6,9 @@ ref testimonial : https://workik.com/testimonial-section-design-for-websites-wit
 
 Timeline workflow
 
-1. ผมทำปุ่ม TH / ENG
-2. ทำในส่วนของภาษาไทย ☑️
-3. testimonial
+1. ผมทำปุ่ม TH / ENG ☑️
+2. แปลไทย ☑️
+3. testimonial ☑️
 
 ส่งให้ลูกค้าตรวจสอบและ Deploy
 

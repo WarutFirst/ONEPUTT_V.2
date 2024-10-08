@@ -12,16 +12,20 @@
 
     <link  href="/styles/output.css" rel="stylesheet"/>
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.css">
+    <link rel="stylesheet" href="/styles/testimonials.css">
+
 </head>
 
 <body class="font-sans bg-gray-100">
     <!-- Navigation Menu (Overlay on Hero Section) -->
     <header class="absolute top-0 w-full z-20">
         <div class="container mx-auto px-4 py-4 flex justify-end items-center">
-            <!-- Hamburger Icon (Hidden by Default) -->
-            <button id="menu-btn" class="md:hidden flex text-white focus:outline-none">
-                <a href="./index.html"><img src="../image/EN.png" alt="TH_Lang" class="w-6 mt-1 mr-5"></a>
-
+             <!-- Hamburger Icon (Hidden by Default) -->
+             <div class="md:hidden flex">
+                <a href="./index.html"><img src="../image/EN.png" alt="EN_Lang" class="w-6 mt-1 mr-2"></a>
+            </div>
+            <button id="menu-btn" class="md:hidden text-white focus:outline-none">
                 <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                     xmlns="http://www.w3.org/2000/svg">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7">
@@ -79,148 +83,69 @@
         </div>
     </section>
 
-    <!-- Testimonel -->
-    <!-- <div id="testimonial-container"> -->
-        <div class="bg-[#AAC1BF] flex items-center justify-center py-20">
-            <div class="container mx-auto px-4">
-                <h2 class="text-4xl font-bold text-center mb-8 text-white">คำนิยม</h2>
-
-                <div class="relative overflow-hidden">
-                    <div class="flex transition-transform duration-300 ease-in-out" id="testimonial-slider">
-                        <!-- Testimonial 1 -->
-                        <div class="w-full md:w-1/3 flex-shrink-0 px-5">
-                            <div class="bg-white rounded-lg shadow-lg p-6">
-                                <img src="../image/pro-mai.png" alt="Pro Mai Wattana"
-                                    class="w-24 h-24 rounded-full mx-auto mb-4">
-                                <p class="text-gray-600 mb-4">OnePutt offers a range of weight options and customizable training distances to suit individual needs and goals.</p>
-                                <a href="https://www.facebook.com/mai.protroke" class="font-bold text-center">Pro Mai Wattana</a>
-                            </div>
+   <!-- Testimonel -->
+   <div class="bg-[#AAC1BF] flex items-center justify-center ">
+    <div class="container mx-auto px-4">
+        <div class="testimonials-container">
+            <h2 class="testimonials-title font-bold">คำนิยม</h2>
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="flex w-full">
+                            <img src="../image/quote.png" alt="quote" class="w-8 h-8 ml-16">
+                            <img src="../image/pro-mai.png" alt="pro-mai" class="testimonial-image">
                         </div>
-
-                        <!-- Testimonial 2 -->
-                        <div class="w-full md:w-1/3 flex-shrink-0 px-2">
-                            <div class="bg-white rounded-lg shadow-lg p-6">
-                                <img src="../image/pro-pure.png" alt="Pro Pure Navee"
-                                    class="w-24 h-24 rounded-full mx-auto mb-4">
-                                <p class="text-gray-600 mb-4">It makes the golf practice enjoyable and fun. So I can practice for a much longer time. It also have clear putting measurements which help improve efficiency.
-                                </p>
-                                <a href="https://www.facebook.com/navee.jetwisespisan" class="font-bold text-center">Pro Pure Navee</a>
-                            </div>
+                     
+                        <p class="testimonial-text">ทำให้สามารถซ้อมได้หลายน้ำหนักและสามารถเลือกระยะซ้อมได้ตามต้องการ</p>
+                        <div class="testimonial-rating">★★★★★</div>
+                        <h3 class="testimonial-name">โปรใหม่วัฒนา</h3>
+                        <!-- <p class="testimonial-position">CEO</p> -->
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="flex w-full">
+                            <img src="../image/quote.png" alt="quote" class="w-8 h-8 ml-16">
+                            <img src="../image/pro-pure.png" alt="pro-pure" class="testimonial-image">
                         </div>
-
-                        <!-- Testimonial 3 -->
-                        <!-- <div class="w-full md:w-1/3 flex-shrink-0 px-2">
-                            <div class="bg-white rounded-lg shadow-lg p-6">
-                                <img src="../image/Icons/multiplayer.png" alt="Pro Mai Wattana"
-                                    class="w-24 h-24 rounded-full mx-auto mb-4">
-                                <p class="text-gray-600 mb-4">"Easy to use and practical to use at home. Good for all
-                                    level of golfer."</p>
-                                <p class="font-bold text-center">Pro Mai Wattana 3</p>
-                            </div>
-                        </div> -->
-
-                        <!-- Testimonial 4 -->
-                        <!-- <div class="w-full md:w-1/3 flex-shrink-0 px-2">
-                            <div class="bg-white rounded-lg shadow-lg p-6">
-                                <img src="../image/Icons/multiplayer.png" alt="Pro Mai Wattana"
-                                    class="w-24 h-24 rounded-full mx-auto mb-4">
-                                <p class="text-gray-600 mb-4">"Easy to use and practical to use at home. Good for all
-                                    level of golfer."</p>
-                                <p class="font-bold text-center">Pro Mai Wattana 4</p>
-                            </div>
-                        </div> -->
-
-
-                        <!-- Testimonial 5 -->
-                        <!-- <div class="w-full md:w-1/3 flex-shrink-0 px-2">
-                            <div class="bg-white rounded-lg shadow-lg p-6">
-                                <img src="../image/Icons/multiplayer.png" alt="Pro Mai Wattana"
-                                    class="w-24 h-24 rounded-full mx-auto mb-4">
-                                <p class="text-gray-600 mb-4">"Easy to use and practical to use at home. Good for all
-                                    level of golfer."</p>
-                                <p class="font-bold text-center">Pro Mai Wattana 5</p>
-                            </div>
-                        </div> -->
-
-                        <!-- Testimonial 6 -->
-                        <!-- <div class="w-full md:w-1/3 flex-shrink-0 px-2">
-                            <div class="bg-white rounded-lg shadow-lg p-6">
-                                <img src="../image/Icons/multiplayer.png" alt="Pro Mai Wattana"
-                                    class="w-24 h-24 rounded-full mx-auto mb-4">
-                                <p class="text-gray-600 mb-4">"Easy to use and practical to use at home. Good for all
-                                    level of golfer."</p>
-                                <p class="font-bold text-center">Pro Mai Wattana 6</p>
-                            </div>
-                        </div> -->
-
-                        <!-- Testimonial 7 -->
-                        <!-- <div class="w-full md:w-1/3 flex-shrink-0 px-2">
-                            <div class="bg-white rounded-lg shadow-lg p-6">
-                                <img src="../image/Icons/multiplayer.png" alt="Pro Mai Wattana"
-                                    class="w-24 h-24 rounded-full mx-auto mb-4">
-                                <p class="text-gray-600 mb-4">"Easy to use and practical to use at home. Good for all
-                                    level of golfer."</p>
-                                <p class="font-bold text-center">Pro Mai Wattana 7</p>
-                            </div>
-                        </div> -->
-
-                        <!-- Testimonial 8 -->
-                        <!-- <div class="w-full md:w-1/3 flex-shrink-0 px-2">
-                            <div class="bg-white rounded-lg shadow-lg p-6">
-                                <img src="../image/Icons/multiplayer.png" alt="Pro Mai Wattana"
-                                    class="w-24 h-24 rounded-full mx-auto mb-4">
-                                <p class="text-gray-600 mb-4">"Easy to use and practical to use at home. Good for all
-                                    level of golfer."</p>
-                                <p class="font-bold text-center">Pro Mai Wattana 8</p>
-                            </div>
-                        </div> -->
-
-                        <!-- Testimonial 9 -->
-                        <!-- <div class="w-full md:w-1/3 flex-shrink-0 px-2">
-                            <div class="bg-white rounded-lg shadow-lg p-6">
-                                <img src="../image/Icons/multiplayer.png" alt="Pro Mai Wattana"
-                                    class="w-24 h-24 rounded-full mx-auto mb-4">
-                                <p class="text-gray-600 mb-4">"Easy to use and practical to use at home. Good for all
-                                    level of golfer."</p>
-                                <p class="font-bold text-center">Pro Mai Wattana 9</p>
-                            </div>
-                        </div> -->
-
+                        <p class="testimonial-text">ฝึกซ้อมได้นานเพราะสนุกและมีประสิทธิภาพมากขึ้นเนื่องจากมีการวัดผลที่ชัดเจน</p>
+                        <div class="testimonial-rating">★★★★★</div>
+                        <h3 class="testimonial-name">โปรเพียวนาวี</h3>
+                        <!-- p class="testimonial-position">CTO</p> -->
                     </div>
                 </div>
-
-                <!-- Navigation Dots -->
-                <div class="flex justify-center mt-4">
-                    <button class="w-2 h-2 rounded-full bg-gray-300 mx-1" onclick="showSlide(0)"></button>
-                    <button class="w-2 h-2 rounded-full bg-gray-300 mx-1" onclick="showSlide(1)"></button>
-                    <button class="w-2 h-2 rounded-full bg-gray-300 mx-1" onclick="showSlide(2)"></button>
-                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
             </div>
-
-            <script>
-                const slider = document.getElementById('testimonial-slider');
-                const slideWidth = slider.clientWidth;
-                let currentSlide = 0;
-
-                function showSlide(index) {
-                    currentSlide = index;
-                    slider.style.transform = `translateX(-${currentSlide * slideWidth}px)`;
-                    updateDots();
-                }
-
-                function updateDots() {
-                    const dots = document.querySelectorAll('.flex.justify-center button');
-                    dots.forEach((dot, index) => {
-                        dot.classList.toggle('bg-gray-600', index === currentSlide);
-                        dot.classList.toggle('bg-gray-300', index !== currentSlide);
-                    });
-                }
-
-                // Initialize
-                updateDots();
-            </script>
         </div>
-    <!-- </div> -->
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.js"></script>
+        <script>
+            new Swiper('.swiper', {
+                slidesPerView: 3,
+                spaceBetween: 30,
+                loop: true,
+                centeredSlides: true,
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+                breakpoints: {
+                    320: {
+                        slidesPerView: 1,
+                    },
+                    768: {
+                        slidesPerView: 3,
+                    }
+                }
+            });
+        </script>
+
+    </div>
+</div>  
 
     <!-- Features -->
     <section id="feature">
