@@ -7,6 +7,14 @@
 2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)
 */
 
+@font-face {
+  font-family:PT-San;
+  src: url(../font/PT_Sans-Web-Regular.ttf);
+
+  font-family:PT-San-Cap;
+  src: url(../font/PTSansCaption-Regular.ttf);
+}
+
 *,
 ::before,
 ::after {
@@ -328,6 +336,9 @@ legend {
 ol,
 ul,
 menu {
+  font-family: PT-San;
+  color: black;
+  font-size: 14px;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -828,10 +839,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-radius: 0.75rem;
 }
 
-.border {
-  border-width: 1px;
-}
-
 .bg-gray-100 {
   --tw-bg-opacity: 1;
   background-color: rgb(243 244 246 / var(--tw-bg-opacity));
@@ -993,6 +1000,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
+}
+
+.text-\[30px\] {
+  font-size: 30px;
 }
 
 .font-bold {
