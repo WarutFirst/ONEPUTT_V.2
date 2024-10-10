@@ -13,6 +13,17 @@
 
   font-family:PT-San-Cap;
   src: url(../font/PTSansCaption-Regular.ttf);
+
+  font-family: DB Helve reg;
+  src: url(../font/DB\ Helve\ x\ reg.ttf);
+
+  font-family: DB Helve Bd;
+  src: url(../font/DB\ Helvethaica\ X\ 75\ Bd.ttf);
+
+  font-family: DB Helve Bik;
+  src: url(../font/DB\ Helvethaica\ X\ 85\ Blk.ttf);
+
+
 }
 
 *,
