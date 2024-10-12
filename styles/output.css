@@ -14,11 +14,12 @@
   font-family:PT-San-Cap;
   src: url(../font/PTSansCaption-Regular.ttf);
 
+  /* Font TH from customer */
   font-family: DB Helve reg;
-  src: url(../font/DB\ Helve\ x\ reg.ttf);
+  src: url(../font/DB\ Helvethaica\ X\ v3.2.ttf);
 
   font-family: DB Helve Bd;
-  src: url(../font/DB\ Helvethaica\ X\ 75\ Bd.ttf);
+  src: url(../font/DB\ Helvethaica\ X\ Bd\ v3.2.ttf);
 
   font-family: DB Helve Bik;
   src: url(../font/DB\ Helvethaica\ X\ Blk\ v3.2.ttf);
